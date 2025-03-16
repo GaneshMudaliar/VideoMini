@@ -1,7 +1,7 @@
 const mongoose  = require("mongoose");
 const video = require("../model/video.model");
 
-//  add video
+//  add videos
 
 
 const addVideo = async(req,res) => {
