@@ -42,7 +42,7 @@ const getVideoDettails = async(req,res) => {
 
     
     const videoDetails = await video.find();
-    // JSON.stringify(videoDetails);
+  
 
     res.status(200).json({
       message : "get All videos",
