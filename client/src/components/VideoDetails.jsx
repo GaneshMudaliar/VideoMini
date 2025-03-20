@@ -5,7 +5,7 @@ const VideoDetails = () => {
   const [video , setVideo ] = useState();
 
 
-//  get video details
+//  get video detail
 
    const videoData = async() => {
 
