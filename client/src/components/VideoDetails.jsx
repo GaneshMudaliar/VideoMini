@@ -30,22 +30,22 @@ const VideoDetails = () => {
 
    useEffect(() => {
     videoData()
-   },[video])
+   },[])
 
    
 
   return (
     <div>
-    {video.map((video) => (
-      <div key={video._id}>
-        <h2>{video.title}</h2>
-        <p>{video.description}</p>
-        <a href={video.link}>Youtube</a>
+    {video.map((videoItem) => (
+  <div key={videoItem._id}>
+    <h2>{videoItem.title}</h2>
+    <p>{videoItem.description}</p>
+    <a href={videoItem.link} target="_blank" rel="noopener noreferrer">
+      YouTube
+    </a>
+  </div>
+))}
 
-      </div>
-
-
-    ))}
   </div>
   )
 }
